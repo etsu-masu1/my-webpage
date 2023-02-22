@@ -1,0 +1,29 @@
+header {
+    background-color: rgb(37, 37, 37);
+    height: 90px;
+    color:whitesmoke;
+}
+.logo {
+    font-size: 20px;
+}
+
+ul {
+    list-style: none;
+    float:right;
+}
+li {
+    float :left;
+}
+.topImage {
+    background-repeat: no-repeat;
+    object-fit:cover;
+    object-position: 100% 100%;
+}
+
+footer h4 {
+    text-align:center;
+}
+
+.copyright {
+    float:right;
+}
