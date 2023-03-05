@@ -44,7 +44,7 @@ ul {
 li {
     justify-content: flex-start;
     display: inline-block;
-    padding: 5% 5%;
+    padding: 4% 5%;
 }
 
 a {
@@ -54,7 +54,7 @@ a {
 }
 
 .top {
-    border-bottom: 10px solid white;
+    border-bottom: 3px solid white;
 }
 
 .topImage {
