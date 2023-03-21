@@ -57,6 +57,11 @@ a {
     align-items: center;
 }
 
+a:hover{
+    opacity: 0.7;
+    transition-duration: 0.15s;
+}
+
 .top {
     border-bottom: 3px solid white;
 }

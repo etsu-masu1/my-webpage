@@ -57,6 +57,11 @@ a {
     align-items: center;
 }
 
+a:hover{
+    opacity: 0.7;
+    transition-duration: 0.15s;
+}
+
 .awards {
     border-bottom: 3px solid white;
 }
@@ -134,8 +139,9 @@ h1 {
 }
 
 .ulMain {
-    display: inline-block, flex;
+    display: block;
     color: white;
+    text-align: center;
 
 }
 
