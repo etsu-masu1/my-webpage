@@ -85,7 +85,8 @@ footer h4 {
 
 .left-footer {
     flex: 1;
-    width: 50%;
+    width: 50vh;
+    height: 100%;
     color: white;
 }
 
@@ -96,6 +97,10 @@ footer h4 {
     text-align: right;
     display: inline-block;
     padding: ;
+}
+
+.japanese {
+    border-bottom: 3px solid white;
 }
 
 main {
