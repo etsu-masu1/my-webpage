@@ -57,7 +57,7 @@ a {
     align-items: center;
 }
 
-a:hover{
+a:hover {
     opacity: 0.7;
     transition-duration: 0.15s;
 }
@@ -97,7 +97,7 @@ footer h4 {
 
 .translation {
     display: inline-block;
-    padding: 0,20px;
+    padding: 0, 20px;
     display: flex;
 }
 
