@@ -4,16 +4,33 @@
 <head>
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<<<<<<< HEAD
      <meta name="viewport"  content="width=device-width, initial-scale=1">
+=======
+     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+>>>>>>> 8a0efa9e564d1ee251924b12324229f3fff727d4
      <link rel="stylesheet" href="style.css">
      <title>Etsuro Masuda's webpage</title>
 </head>
 
 <body>
+     <div class="menu-icon" onclick="toggleMenu()">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+     </div>
+     <!-- メニュー -->
+     <div class="menu" id="menu">
+          <a href="#">ホーム</a>
+          <a href="#">サービス</a>
+          <a href="#">製品</a>
+          <a href="#">お問い合わせ</a>
+     </div>
      <header>
           <div class="left-header">
                <div class="logo">~ Etsuro Masuda's page ~</div>
           </div>
+          <p id="width"></p>
           <div class="right-header">
                     <ul class="nav__links" id="nav__links">
                          <li class="top"><a href="">Top</a></li>
@@ -25,7 +42,6 @@
           </div>
      </header>
      <main>
-          <script src="script.js"></script>
      </main>
      <footer>
           <div class="left-footer">
@@ -38,7 +54,8 @@
           <div class="right-footer">
                <p class="copyright">© Etsuro Masuda 2023</p>
           </div>
-     </footer>
+     </footer>　
+     <script src="toggle-menu.js"></script>
 </body>
 
 </html>
