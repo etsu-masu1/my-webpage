@@ -24,11 +24,13 @@ header {
     width: 50%;
 }
 
+
 .right-header {
     flex: 1;
     width: 50%;
     height: 100%;
 }
+
 
 .logo {
     font-size: 20px;
@@ -36,54 +38,39 @@ header {
     font-weight: bold;
 }
 
+
+
+
 ul {
     list-style: none;
     display: flex;
     justify-content: space-around;
     margin: 0;
     height: 100%;
+    
+}
+
+.width {
+    display: none;
 }
 
 @media (max-width: 600px){
     .logo{
         padding-left: 5px;
-        font-size: 12px;
+        font-size: 20px;
     }
 
     ul{
-    display: none;
-}
-
-h1 {
-    text-align: center;
-    font-size: 16px;
-}
-
-.ulMain {
-    display: inline-block;
-    word-wrap: break-word;
-}
-
-li {
-    width: 100%;
-}
-
-a {
-    display: block;
-    height: 100%;
-    text-align: center;
-    padding: 10px 0;
-}
+        display: none;
+    }
 
     
 }
 
 li {
-  white-space: normal;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-}
+    justify-content: flex-start;
 
+}
 
 a {
     color: #fff;
@@ -131,12 +118,6 @@ footer h4 {
     color: white;
 }
 
-.translation {
-    display: inline-block;
-    padding: 0, 20px;
-    display: flex;
-}
-
 .right-footer {
     flex: 1;
     width: 50%;
@@ -146,12 +127,16 @@ footer h4 {
     padding: ;
 }
 
+.japanese {
+    border-bottom: 3px solid white;
+}
+
 main {
     line-height: 0px;
     height: 80%;
     background-image: url(../image/G75_0960.jpg);
     background-size: cover;
-
+    position: relative;
 
 }
 
@@ -164,37 +149,143 @@ img {
 .copyright {
     color: white;
     margin: 0;
+    padding-right: 10px
 
 }
 
-h1 {
-    color: white;
-    font-family: "Osaka";
-    font-size: 40px;
-    padding: 15px 50px;
-}
 
-.ulMain {
-    display: block;
-    color: white;
-    text-align: center;
-
-}
-
-.ulFooter {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-}
-
-.liMain {
+.menu-icon {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding-top: 60px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    position: absolute;
+    left: 85%;
+    top: 3%;
+}
+
+.bar{
+    color: rgb(41, 41, 41);
+    
+}
+
+nav{
+    height: 100%;
+    
+}
+
+.nav__links{
+    display: none;
+}
+
+.hamburger__nav__links{ 
+    display: none;
+    flex-direction: column;
+    padding: 10px;
+    background-color: rgb(59, 56, 56);
+    height:30%;
+    opacity: 0.8;
+    
+    
+
 
 }
 
-.japanese {
-    border-bottom: 3px solid white;
+.hamburger__nav__links ul{
+    
+}
+
+
+
+.hamburger__awards{
+    background-color:  rgb(91, 91, 91);
+}
+
+.hamburger__nav__links li {
+    border-bottom: 1px solid rgb(117, 117, 117);
+    height: 20%;
+    
+}
+
+.hamburger__nav__links li a:active{
+    background-color:rgb(115, 115, 115);
+    animation-duration: 0.1s;
+}
+
+@media (min-width:980px){
+    .menu-icon{
+        display: none;
+    }
+    .hamburger__nav__links{
+        display: none;
+        
+    }
+
+    .nav__links {
+        display: flex;
+    }
+
+
+    .logo{
+        font-size: font-size: 30px;;
+    }
+
+
+
+}
+.bar {
+    width: 100%;
+    height: 3px;
+    background-color: rgb(225, 225, 225);
+    margin: 4px 0;
+    transition: transform 0.2s ease-in-out;
+}
+
+.active .bar:nth-child(1) {
+    transform: rotate(45deg) translate(4px, 3px);
+}
+
+.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(10px, -10px);
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.show {
+    display: block;
+    position: absolute;
+    left: 82%;
+    
+    
+}
+
+main h1{
+    color: white;
+    padding: 20px 20px;
+    position: relative;
+    z-index: 2;
+}
+
+main p {
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  word-break: break-all;
+
 }
