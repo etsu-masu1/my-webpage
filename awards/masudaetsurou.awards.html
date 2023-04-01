@@ -4,47 +4,68 @@
 <head>
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport"  content="width=device-width, initial-scale=1">
+
+     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
      <link rel="stylesheet" href="style.awards.css">
      <title>Etsuro Masuda's webpage</title>
 </head>
 
 <body>
+     </div>
      <header>
           <div class="left-header">
                <div class="logo">~ Etsuro Masuda's page ~</div>
           </div>
+          <p class="width" id="width"></p>
           <div class="right-header">
-               <ul class="ulHeader">
-                    <li class="top"><a href="../masudaetsurou.index.html">Top</a></li>
-                    <li class="profile"><a href="">Profile</a></li>
-                    <li class="awards"><a href="masudaetsurou.awards.html">Awards</a></li>
-                    <li class="works"><a href="">Works</a></li>
-                    <li class="form"><a href="">Form</a></li>
-               </ul>
+               <div class="menu-icon" onclick="toggleMenu()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+               </div>
+               <nav>
+                    <ul class="nav__links" id="nav__links">
+                         <li class="top"><a href="../masudaetsurou.index.html">Top</a></li>
+                         <li class="profile"><a href="">Profile</a></li>
+                         <li class="awards"><a href="masudaetsurou.awards.html">Awards</a></li>
+                         <li class="works"><a href="">Works</a></li>
+                         <li class="form"><a href="">Form</a></li>
+                    </ul>
+               </nav>
           </div>
      </header>
+     <div class="menu" id="menu">
+          <div>
+               <a href="#">ホーム</a>
+               <a href="#">サービス</a>
+               <a href="#">製品</a>
+               <a href="#">お問い合わせ</a>
+          </div>
+     </div>
      <main>
-          <script src="script.js"></script>
-          <h1>~賞歴~</h1>
-          <ul class="ulMain">
-               <li class="liMain">2014年　第19回東京国際室内楽作曲コンクール第3位（最高位）</li>
-               <li class="liMain">第2回モーリス・ラヴェル国際作曲コンクールC部門セミファイナリスト</li>
-               <li class="liMain">前田音楽奨励賞</li>
-          </ul>
+               <ul class="hamburger__nav__links" id="hamburger__nav__links">
+                    <li class="hamburger__top"><a href="../masudaetsurou.index.html">Top</a></li>
+                    <li class="hamburger__profile"><a href="">Profile</a></li>
+                    <li class="hamburger__awards"><a href="awards/masudaetsurou.awards.html">Awards</a></li>
+                    <li class="hamburger__works"><a href="">Works</a></li>
+                    <li class="hamburger__form"><a href="">Form</a></li>
+               </ul>
+               <h1>賞歴</h1>
+          <p>第19回東京国際室内楽作曲コンクール第3位（最高位）。</p>
+          <p>第2回モーリス・ラヴェル国際作曲コンクールC部門セミファイナリスト。</p>
+          <p>前田音楽奨励賞受賞。</p>
      </main>
      <footer>
           <div class="left-footer">
                <ul>
-                    <li class="japanese"><a href="">日本語</a></li>
-                    <li><a href="" class="english">English</a></li>
-                    <li><a href="" class="german">Deutsch</a></li>
+                    <li class="japanese"><a href="" c>日本語</a></li>
+                    <li><a href="">English</a></li>
+                    <li><a href="">Deutsch</a></li>
                </ul>
           </div>
           <div class="right-footer">
                <p class="copyright">© Etsuro Masuda 2023</p>
           </div>
      </footer>
+     <script src="../toggle-menu.js"></script>
 </body>
-
-</html>

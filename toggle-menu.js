@@ -3,7 +3,7 @@ function toggleMenu() {
     menu.classList.toggle("show");
     var menuIcon = document.querySelector(".menu-icon");
     menuIcon.classList.toggle("active");
-    var navLinks = document.querySelector(".nav__links");
+    var navLinks = document.querySelector(".hamburger__nav__links");
     navLinks.classList.toggle("show");
 }
 
