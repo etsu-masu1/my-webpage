@@ -51,7 +51,7 @@ ul {
 }
 
 .width {
-    display: none;
+    display: flex;
 }
 
 @media (max-width: 600px){
