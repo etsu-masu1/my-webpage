@@ -54,7 +54,9 @@ header {
 }
 
 .width {
-    display: flex;
+    display: flex
+    
+    ;
 }
 
 @media (max-width: 600px) {
@@ -121,6 +123,7 @@ footer h4 {
     width: 50vh;
     height: 100%;
     color: white;
+    display: none;
 }
 
 .right-footer {
