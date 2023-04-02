@@ -51,7 +51,7 @@ ul {
 }
 
 .width {
-    display: none;
+    display: flex;
 }
 
 @media (max-width: 600px){
@@ -277,6 +277,9 @@ main h1{
     padding: 20px 20px;
     position: relative;
     z-index: 2;
+    display: flex;
+    justify-content: center;
+    
 }
 
 main p {
