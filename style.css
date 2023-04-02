@@ -222,9 +222,17 @@ nav{
 .nav__links{
     display:flex;
 }
-
-
+.left-footer {
+    display: flex;
 }
+
+.left-footer ul {
+    width: 100%;
+}
+}
+
+
+
 .bar {
     width: 100%;
     height: 3px;

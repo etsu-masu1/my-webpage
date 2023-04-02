@@ -51,7 +51,9 @@ ul {
 }
 
 .width {
-    display: flex;
+    display: flex
+    
+    ;
 }
 
 @media (max-width: 600px){
@@ -85,7 +87,7 @@ a:hover {
     transition-duration: 0.15s;
 }
 
-.awards {
+.profile {
     border-bottom: 3px solid white;
 }
 
@@ -116,6 +118,7 @@ footer h4 {
     width: 50vh;
     height: 100%;
     color: white;
+    display: none;
 }
 
 .right-footer {
@@ -136,15 +139,35 @@ main {
     height: 80%;
     background-image: url(../image/G75_0960.jpg);
     background-size: cover;
-    position: relative;
 
 }
 
-img {
-    object-fit: contain;
-    width: 100%;
-    height: 100%;
-}
+.image{
+        display: flex;
+        background-image: url(../image/profile.jpg);
+        background-size: 100%, 100%;
+        width: 100%;
+        height: 50%;
+        margin: 0px,20px,10vh,0px;
+        background-repeat: no-repeat;
+    
+    }
+
+    .text-contents{
+        width: 100%;
+        height: 35%;
+        overflow: auto;
+    }
+
+p {
+        color: white;
+        display: block;
+        text-align: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+
 
 .copyright {
     color: white;
@@ -172,11 +195,6 @@ img {
 
 nav{
     height: 100%;
-    
-}
-
-.nav__links{
-    display: none;
 }
 
 .hamburger__nav__links{ 
@@ -186,19 +204,11 @@ nav{
     background-color: rgb(59, 56, 56);
     height:30%;
     opacity: 0.8;
-    
-    
 
 
 }
 
-.hamburger__nav__links ul{
-    
-}
-
-
-
-.hamburger__awards{
+.hamburger__profile{
     background-color:  rgb(91, 91, 91);
 }
 
@@ -213,66 +223,57 @@ nav{
     animation-duration: 0.1s;
 }
 
-.text{
-    display: none;
+
+.nav__links{
+    display:none;
 }
-
-.firstTextForPhone{
-    padding-top: 40px;
-    padding-bottom: 10px;
-}
-
-.secondTextForPhone {
-    padding-top: 40px;
-    padding-bottom: 10px;
-}
-
-.thirdTextForPhone{
-    padding-top: 40px;
-    padding-bottom: 20px;
-}
-
-
 
 @media (min-width:980px){
-    
-   .title{
-    display: flex;
-    justify-content: left;
-    padding-left: 50px;
-   }
-    
     .menu-icon{
         display: none;
     }
     .hamburger__nav__links{
         display: none;
-        
     }
-
-    .nav__links {
-        display: flex;
-    }
-
 
     .logo{
-        font-size: font-size: 30px;
-
-        
+        font-size: font-size: 30px;;
     }
 
+.nav__links{
+    display:flex;
+}
+.left-footer {
+    display: flex;
+}
 
-    .text{
-        display: flex;
-        padding-top: 30px;
-        padding-bottom: 30px;
-    
-    }
-    
-    #phone{
-        display: none;
-    }
+.left-footer ul {
+    width: 100%;
+}
 
+main h1{
+    display: flex;
+justify-content: left;
+padding-left: 50px;
+
+}
+
+.image{
+    background-image: url(../image/profile.jpg);
+    background-size: 80%, 80%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
+
+}
+
+#textForPhone{
+    display: none;
+}
+
+.text-contents{
+    padding-top: 20px;
+}
 
 }
 
@@ -311,28 +312,18 @@ nav{
 .show {
     display: block;
     position: absolute;
-    left: 82%;
-    
+    left: 80%;
     
 }
 
-main h1{
+h1 {
     color: white;
     padding: 20px 20px;
-    position: relative;
-    z-index: 2;
     display: flex;
     justify-content: center;
-    
+    text-align: center;
 }
 
-main p {
-    color: white;
-    display: flex;
-    flex-direction: wrap;
-  justify-content: center;
-  align-items: center;
-  word-break: break-all;
-  
-
+.text {
+    display: none;
 }
