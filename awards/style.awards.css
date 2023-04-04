@@ -51,7 +51,7 @@ ul {
 }
 
 .width {
-    display: flex;
+    display: none;
 }
 
 @media (max-width: 600px){
@@ -298,15 +298,6 @@ nav{
     transform: rotate(-45deg) translate(10px, -10px);
 }
 
-.menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #fff;
-    padding: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-}
 
 .show {
     display: block;
