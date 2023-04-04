@@ -47,24 +47,49 @@ ul {
     justify-content: space-around;
     margin: 0;
     height: 100%;
-    
+
 }
 
 .width {
     display: none;
 }
 
-@media (max-width: 600px){
-    .logo{
+@media (max-width:979px) {
+    .logo {
         padding-left: 5px;
         font-size: 20px;
     }
 
-    ul{
+    ul {
         display: none;
     }
 
-    
+    main h1 {
+        padding: ;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .input-container {
+        padding left: 20px;
+    }
+
+    input {
+        font-size: 25px;
+    }
+
+    textarea {
+        font-size: 25px;
+        height: 400px;
+    }
+
+    main p {
+        text-align: center;
+        color: white;
+        padding: 5px 5px 0 0;
+    }
+
 }
 
 li {
@@ -85,7 +110,7 @@ a:hover {
     transition-duration: 0.15s;
 }
 
-.awards {
+.form {
     border-bottom: 3px solid white;
 }
 
@@ -116,6 +141,7 @@ footer h4 {
     width: 50vh;
     height: 100%;
     color: white;
+    display: none;
 }
 
 .right-footer {
@@ -136,7 +162,6 @@ main {
     height: 80%;
     background-image: url(../image/G75_0960.jpg);
     background-size: cover;
-    position: relative;
 
 }
 
@@ -150,7 +175,6 @@ img {
     color: white;
     margin: 0;
     padding-right: 10px
-
 }
 
 
@@ -165,115 +189,91 @@ img {
     top: 3%;
 }
 
-.bar{
+.bar {
     color: rgb(41, 41, 41);
-    
+
 }
 
-nav{
+nav {
     height: 100%;
-    
 }
 
-.nav__links{
-    display: none;
-}
-
-.hamburger__nav__links{ 
+.hamburger__nav__links {
     display: none;
     flex-direction: column;
     padding: 10px;
     background-color: rgb(59, 56, 56);
-    height:30%;
+    height: 30%;
     opacity: 0.8;
-    
-    
 
 
 }
 
-.hamburger__nav__links ul{
-    
-}
-
-
-
-.hamburger__awards{
-    background-color:  rgb(91, 91, 91);
+.hamburger__form {
+    background-color: rgb(91, 91, 91);
 }
 
 .hamburger__nav__links li {
     border-bottom: 1px solid rgb(117, 117, 117);
     height: 20%;
-    
+
 }
 
-.hamburger__nav__links li a:active{
-    background-color:rgb(115, 115, 115);
+.hamburger__nav__links li a:active {
+    background-color: rgb(115, 115, 115);
     animation-duration: 0.1s;
 }
 
-.text{
+
+.nav__links {
     display: none;
 }
 
-.firstTextForPhone{
-    padding-top: 40px;
-    padding-bottom: 10px;
-}
-
-.secondTextForPhone {
-    padding-top: 40px;
-    padding-bottom: 10px;
-}
-
-.thirdTextForPhone{
-    padding-top: 40px;
-    padding-bottom: 20px;
-}
-
-
-
-@media (min-width:980px){
-    
-   .title{
-    display: flex;
-    justify-content: left;
-    padding-left: 50px;
-   }
-    
-    .menu-icon{
+@media (min-width:980px) {
+    .menu-icon {
         display: none;
     }
-    .hamburger__nav__links{
+
+    .hamburger__nav__links {
         display: none;
-        
+    }
+
+    .logo {
+        font-size: font-size: 30px;
+        ;
     }
 
     .nav__links {
         display: flex;
     }
 
-
-    .logo{
-        font-size: font-size: 30px;
-
-        
-    }
-
-
-    .text{
+    .left-footer {
         display: flex;
-        padding-top: 30px;
-        padding-bottom: 30px;
-    
-    }
-    
-    #phone{
-        display: none;
     }
 
+    .left-footer ul {
+        width: 100%;
+    }
 
+    main h1 {
+        padding: 20px 20px;
+    }
+
+    main p {
+        color: white;
+        text-align: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    input {
+        font-size: 25px;
+    }
+
+    textarea {
+        font-size: 25px;
+        height: 40vh;
+    }
 }
 
 
@@ -298,32 +298,31 @@ nav{
     transform: rotate(-45deg) translate(10px, -10px);
 }
 
-
 .show {
     display: block;
     position: absolute;
-    left: 82%;
-    
-    
+    left: 80%;
+
 }
 
-main h1{
+main h1 {
     color: white;
-    padding: 20px 20px;
-    position: relative;
-    z-index: 2;
+}
+
+.input-container {
+    color: white;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    
+    height: auto;
+    padding-left: 5vh;
+    padding-right: 5vh;
 }
 
-main p {
-    color: white;
-    display: flex;
-    flex-direction: wrap;
-  justify-content: center;
-  align-items: center;
-  word-break: break-all;
-  
+
+form {
+    height: 60%;
+    overflow: scroll;
+
 
 }

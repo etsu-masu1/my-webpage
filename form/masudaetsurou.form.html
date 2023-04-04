@@ -6,7 +6,7 @@
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
      <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-     <link rel="stylesheet" href="style.awards.css">
+     <link rel="stylesheet" href="style.form.css">
      <title>Etsuro Masuda's webpage</title>
 </head>
 
@@ -16,6 +16,7 @@
           <div class="left-header">
                <div class="logo">~ Etsuro Masuda's page ~</div>
           </div>
+          <p class="width" id="width"></p>
           <div class="right-header">
                <div class="menu-icon" onclick="toggleMenu()">
                     <div class="bar"></div>
@@ -26,9 +27,9 @@
                     <ul class="nav__links" id="nav__links">
                          <li class="top"><a href="../masudaetsurou.index.html">Top</a></li>
                          <li class="profile"><a href="/profile/masudaetsurou.profile.html">Profile</a></li>
-                         <li class="awards"><a href="masudaetsurou.awards.html">Awards</a></li>
+                         <li class="awards"><a href="/awards/masudaetsurou.awards.html">Awards</a></li>
                          <li class="works"><a href="/works/masudaetsurou.works.html">Works</a></li>
-                         <li class="form"><a href="/form/masudaetsurou.form.html">Form</a></li>
+                         <li class="form"><a href="masudaetsurou.form.html">Form</a></li>
                     </ul>
                </nav>
           </div>
@@ -39,20 +40,28 @@
                <ul class="hamburger__nav__links" id="hamburger__nav__links">
                     <li class="hamburger__top"><a href="../masudaetsurou.index.html">Top</a></li>
                     <li class="hamburger__profile"><a href="/profile/masudaetsurou.profile.html">Profile</a></li>
-                    <li class="hamburger__awards"><a href="masudaetsurou.awards.html">Awards</a></li>
+                    <li class="hamburger__awards"><a href="/awards/masudaetsurou.awards.html">Awards</a></li>
                     <li class="hamburger__works"><a href="/works/masudaetsurou.works.html">Works</a></li>
-                    <li class="hamburger__form"><a href="/form/masudaetsurou.form.html">Form</a></li>
+                    <li class="hamburger__form"><a href="masudaetsurou.form.html">Form</a></li>
                </ul>
-               <h1 class="title">賞歴</h1>
-          <p class="text">第19回東京国際室内楽作曲コンクール第3位（最高位）</p>
-          <p class="firstTextForPhone" id="phone">第19回東京国際室内楽</p>
-          <p class="nextFirstTextForPhone" id="phone">作曲コンクール第3位（最高位）</p>
-          <p class="text">第2回モーリス・ラヴェル国際作曲コンクールC部門セミファイナリスト</p>
-          <p class="secondTextForPhone" id="phone">第2回モーリス・ラヴェル国際</p>
-          <p class="nextSecondTextForPhone" id="phone">作曲コンクールC部門セミファイナリスト</p>
-          <p class="text">前田音楽奨励賞受賞</p>
-          <p class="thirdTextForPhone" id="phone">前田音楽奨励賞受賞</p>
-          <p class="width" id="width"></p>
+               <h1>フォーム</h1>
+               <p class="forPhone">作曲依頼、演奏依頼、講師の依頼、質問、</p>
+               <p class="forPhone">メッセージ等はこちらからお願い致します。</p>
+               <br>
+               <p class="forPhone">please write and send me your message</p>
+               <p class="forPhone">for request of compose, performance, </p>
+               <p class="forPhone">teach or request and message etc.</p>
+               
+               <form action="masudaetsurou@gmail.com" method="post" onsubmit="location.href='complete.html';" name="contact-form">
+                    <div class="input-container">
+                    <input type="text" name="name" placeholder="お名前/Name">
+                    <input type="email" name="address" placeholder="メールアドレス/E-Mail">
+                    <input type="text" name="tittle" placeholder="件名/Tittle">
+                    <textarea placeholder="本文/Message"></textarea>
+                    <input type="submit" value="送信/Send">
+                    </div>
+
+               </form>
      </main>
      <footer>
           <div class="left-footer">
@@ -68,3 +77,5 @@
      </footer>
      <script src="../toggle-menu.js"></script>
 </body>
+
+</html>

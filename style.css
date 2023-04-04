@@ -54,7 +54,13 @@ header {
 }
 
 .width {
+<<<<<<< HEAD
     display: flex;
+=======
+    display: none;
+    
+    ;
+>>>>>>> 8bff11b10decde98be00439ad612ef61a1f897d8
 }
 
 @media (max-width: 600px) {
@@ -226,13 +232,29 @@ nav {
         ;
     }
 
+<<<<<<< HEAD
     .nav__links {
         display: flex;
         width: 100%;
     }
-
-
+=======
+.nav__links{
+    display:flex;
 }
+.left-footer {
+    display: flex;
+}
+>>>>>>> 8bff11b10decde98be00439ad612ef61a1f897d8
+
+.left-footer ul {
+    width: 100%;
+}
+<<<<<<< HEAD
+=======
+}
+
+
+>>>>>>> 8bff11b10decde98be00439ad612ef61a1f897d8
 
 .bar {
     width: 100%;
@@ -252,16 +274,6 @@ nav {
 
 .active .bar:nth-child(3) {
     transform: rotate(-45deg) translate(10px, -10px);
-}
-
-.menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #fff;
-    padding: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .show {
