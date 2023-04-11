@@ -1,0 +1,47 @@
+.menu-icon {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .menu-icon span {
+    display: block;
+    height: 2px;
+    width: 30px;
+    margin-bottom: 5px;
+    background: #333;
+  }
+  
+  /* ハンバーガーメニューのコンテンツ */
+  .menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 200px;
+    background: #f9f9f9;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu li a {
+    display: block;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .menu li:last-child a {
+    border-bottom: none;
+  }
+
+  header{
+    height: 50px;
+  }
