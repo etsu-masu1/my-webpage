@@ -1,0 +1,77 @@
+html{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+header{
+    height: 60px;
+    width: 100%;
+    padding-bottom: 40px;
+}
+
+h1{
+    margin: 0;
+    padding: 5px 5px;
+    display: block;
+    text-align: center;
+}
+#todoForm{
+    width: 80%;
+    height: 100%;
+    padding-top: 50px;
+    display: block;
+    text-align: center;
+
+}
+
+input{
+    height: 30px;
+    width: 200px;
+}
+
+button{
+    height: 36px;
+}
+
+#todoForm {
+    padding: 0;
+    text-align: center;
+}
+
+.pointOfTodoForm{
+    display: flex;
+    justify-content: center;
+}
+
+#todoList{
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    padding-left: 0;
+}
+
+#todoList span {
+    padding-right: 10px;
+}
+
+#todoList button {
+    background-color: rgb(246, 158, 158);
+    border-radius: 5px;
+}
+
+.delete-button{
+    display:none;
+}
+
+input[type="checkbox"]{
+    height: 15px;
+    width: 15px;
+    margin-right: 20px;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>文字数カウント</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="index.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <div class="title">
+                <h1>文字数カウント</h1>
+            </div>
+        </header>
+        <form>
+            <textarea class="input"></textarea>
+            <div class="table">
+                <button class="submit" type="submit">字数を数える</button>
+                <button class="reset" type="reset">リセット</button>
+            </div>
+        </form>
+        <main>
+            <div class="numbersOfCounts">
+                <p>現在スペース込みで<span id="count">0</span>文字</p>
+                <p>現在スペース抜きで<span id="countWithoutSpaces">0</span>文字</p>
+                <p>現在<span id="newline">0</span>行</p>
+                <p>現在原稿用紙<span id="maniscript">0</span>枚分（1枚400文字換算）</p>
+            </div>
+        </main>
+    </body>
+</html>

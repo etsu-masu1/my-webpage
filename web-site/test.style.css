@@ -9,8 +9,29 @@
     width: 30px;
     margin-bottom: 5px;
     background: #333;
+    transition: all 0.5s ease;
+  }
+
+  .menu-icon.cross {
+    transition: all 0.5s ease;
+  }
+
+  .menu-icon.cross :nth-child(1){
+    transform: rotate(45deg) translate(0px,13px);
+    transition: all 0.5s ease;
+    
+  }
+
+  .menu-icon.cross :nth-child(2){
+    opacity: 0;
+    transition: all 0.5s ease;
   }
   
+  .menu-icon.cross :nth-child(3){
+    transform: rotate(-45deg) translate(-5px,-10px);
+    transition: all 0.5s ease;
+  }
+
   /* ハンバーガーメニューのコンテンツ */
   .menu {
     display: none;
@@ -21,7 +42,7 @@
     background: #f9f9f9;
     padding: 20px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    transition: opacity 1s ease-in-out;
+    transition: all 1s ease;
   }
   
   .menu ul {
